@@ -1,0 +1,184 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+header{
+    background-color: aquamarine;
+    text-align: center;
+    align-content: center;
+    height: 5vh;
+    color: azure;
+}
+
+.textoHeader{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.productos{
+    text-align: center;
+    align-content: center;
+    height: 10vh;
+    background-color: azure;
+    font-size: 18px;
+    color: darkgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuerpo{
+    background-color: azure;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    padding: 0 50px;
+    }
+
+.vitrina{
+    width: 70%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 30px;
+    justify-content: center;
+    scrollbar-width: none;
+}
+
+.card{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img{
+    width: 100px;
+    align-self: center;
+}
+
+.card__titulo, .card__precio{
+    width: fit-content;
+}
+
+.formulario{
+    width: 30%;
+}
+
+.formCaja{
+    padding: 20px;
+    border: 5px solid aquamarine;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.formulario__titulo-texto{
+    margin-bottom: 30px;
+}
+
+.principal__formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario__campo, .campo__input{
+    width: 90%;
+    align-self: center;
+    outline: none;
+}
+
+.campo__input:hover{
+    border-bottom: 3px solid aquamarine;
+}
+
+.botonesFormulario{
+    display: flex;
+    justify-content: center;
+    gap: 30px;   
+}
+
+.formulario__boton{
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 3px solid aquamarine;
+}
+
+.formulario__boton:hover{
+    background-color: azure;
+}
+
+footer{
+    background-color: aquamarine;
+    width: 100%;
+    align-content: center;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.paragrafo__footer{
+    text-align: center;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    header{
+        height: 5vh;
+    }
+
+    .productos{
+        height: 5vh;
+    }
+
+    .cuerpo{
+        height: 80vh;
+        padding-top: 50px;
+    }
+
+    .vitrina{
+        width: 50%;
+    }
+
+    .formulario{
+        width: 50%;
+    }
+
+    footer{
+        height: 10vh;
+    }
+
+    .formCaja{
+        width: 200px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 425px) {
+    .cuerpo{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+        padding-top: 10px;
+    }
+
+    .vitrina{
+        width: 100%;
+    }
+    
+    .formulario{
+        width: 100%; 
+    }
+
+    .formCaja{
+        height: 95%;
+    }
+    .paragrafo__footer{
+        font-size: 12px;
+    }
+}

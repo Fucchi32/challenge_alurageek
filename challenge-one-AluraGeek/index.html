@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="header"><h1 class="textoHeader">AluraGeek</h1>
+      <!-- <img src="img/Header.png" -->
+    </header>
+    <h1 class="productos">Mis Productos</h1>
+    <div class="cuerpo">
+        <!-- productos -->
+        <section class="vitrina">
+            <!-- Acá van los productos -->
+          <div class="card">
+            <img src="https://www.animeclick.it/immagini/manga/Yotsuba/cover/Yotsuba-cover.jpg" alt="portada producto" class="img" id="img" />
+            <h2 class="card__titulo">YOTSUBA&! 1</h2>
+            <h3 class="card__precio">6,50 €</h3>            
+          </div>
+
+          <div class="card">
+            <img src="https://www.animeclick.it/immagini/manga/Yotsuba/cover/Yotsuba-cover.jpg" alt="portada producto" class="img" id="img" />
+            <h2 class="card__titulo">YOTSUBA&! 1</h2>
+            <h3 class="card__precio">6,50 €</h3>            
+          </div>
+
+          <div class="card">
+            <img src="https://www.animeclick.it/immagini/manga/Yotsuba/cover/Yotsuba-cover.jpg" alt="portada producto" class="img" id="img" />
+            <h2 class="card__titulo">YOTSUBA&! 1</h2>
+            <h3 class="card__precio">6,50 €</h3>            
+          </div>
+
+          <div class="card">
+            <img src="https://www.animeclick.it/immagini/manga/Yotsuba/cover/Yotsuba-cover.jpg" alt="portada producto" class="img" id="img" />
+            <h2 class="card__titulo">YOTSUBA&! 1</h2>
+            <h3 class="card__precio">6,50 €</h3>            
+          </div>
+
+          <div class="card">
+            <img src="https://www.animeclick.it/immagini/manga/Yotsuba/cover/Yotsuba-cover.jpg" alt="portada producto" class="img" id="img" />
+            <h2 class="card__titulo">YOTSUBA&! 1</h2>
+            <h3 class="card__precio">6,50 €</h3>            
+          </div>
+
+          <div class="card">
+            <img src="https://www.animeclick.it/immagini/manga/Yotsuba/cover/Yotsuba-cover.jpg" alt="portada producto" class="img" id="img" />
+            <h2 class="card__titulo">YOTSUBA&! 1</h2>
+            <h3 class="card__precio">6,50 €</h3>            
+          </div>
+        </section>
+        <!-- formulario -->
+        <section class="formulario">
+          <div class="formCaja">
+            <h2 class="formulario__titulo-texto">AGREGAR PRODUCTO:</h2>
+            <form class="principal__formulario" data-formulario>
+
+              <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="nombre">
+                  <input class="campo__input" placeholder="nombre..." name="nombre" id="nombre" class="campo__completo" type="text" minlength="3" required/>
+                </label>
+                <span class="mensaje-error"></span>
+              </fieldset>
+    
+              <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="precio">
+                  <input class="campo__input" placeholder="precio..." name="precio" id="precio" class="campo__completo" type="text" minlength="3" required/>
+                </label>
+                <span class="mensaje-error"></span>
+              </fieldset>
+
+              <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="imagen">
+                  <input class="campo__input" placeholder="imagen..." name="imagen" id="imagen" class="campo__completo campo__completo--menor" type="text" minlength="8" required/>
+                </label>
+                <span class="mensaje-error"></span>
+              </fieldset>
+    
+              <div class="botonesFormulario">
+                <input
+                  value="enviar"
+                  class="formulario__boton"
+                  id="enviar"
+                  type="submit"
+                  data-boton-enviar
+                />
+                <input
+                  value="limpiar"
+                  class="formulario__boton"
+                  id="limpiar"
+                  type="submit"
+                  data-boton-limpiar
+                />
+              </div>
+            </form>
+          </div>    
+        </section>
+    </div>
+    <footer class="footer">
+      <p class="paragrafo__footer">Desarrollado por Fulvio Podetti, challenge programa ONE - 2024</p>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
